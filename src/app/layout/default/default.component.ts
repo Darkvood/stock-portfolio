@@ -5,5 +5,9 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./default.component.html"
 })
 export class DefaultComponent {
-  constructor() {}
+  sideBarOpen = true;
+
+  toggleSideBar(): void {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 }
