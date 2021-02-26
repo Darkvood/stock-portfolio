@@ -1,11 +1,15 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Stock Portfolio</span>
-
-    <span class="spacer"></span>
-
-    <button mat-icon-button aria-label="Открыть меню">
+    <button
+      *ngIf="menuToggleable"
+      mat-icon-button
+      class="menu-icon"
+      (click)="toggleSideBar()"
+      aria-label="Открыть меню"
+    >
       <mat-icon>menu</mat-icon>
     </button>
+
+    <span>Мой портфель</span>
   </mat-toolbar-row>
 </mat-toolbar>
