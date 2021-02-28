@@ -14,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [CollectionsComponent, NotFoundComponent, PortfolioComponent],
+  declarations: [IndexComponent, CollectionsComponent, NotFoundComponent, PortfolioComponent],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
