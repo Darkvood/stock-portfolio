@@ -1,4 +1,23 @@
-<mat-nav-list>
-  <a mat-list-item routerLink="/">Портфель</a>
-  <a mat-list-item routerLink="/collections">Подборки</a>
-</mat-nav-list>
+<mat-list>
+  <div mat-subheader>Мой портфель</div>
+
+  <mat-nav-list>
+    <mat-list-item routerLink="/">
+      <mat-icon mat-list-icon color="primary">auto_graph</mat-icon>
+      <div mat-line>Обзор</div>
+    </mat-list-item>
+
+    <mat-list-item routerLink="/portfolio">
+      <mat-icon mat-list-icon color="primary">work</mat-icon>
+      <div mat-line>Мои акции</div>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <div mat-subheader>Инструменты</div>
+    <mat-list-item routerLink="/collections">
+      <mat-icon mat-list-icon color="primary">collections</mat-icon>
+      <div mat-line>Подборки</div>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-list>
