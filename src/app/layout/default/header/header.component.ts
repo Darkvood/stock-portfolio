@@ -7,9 +7,9 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 })
 export class HeaderComponent {
   @Input() menuToggleable: string;
-  @Output() toggleAside: EventEmitter<void> = new EventEmitter();
+  @Output() toggleSidebar: EventEmitter<void> = new EventEmitter();
 
   toggleSideBar(): void {
-    this.toggleAside.emit();
+    this.toggleSidebar.emit();
   }
 }

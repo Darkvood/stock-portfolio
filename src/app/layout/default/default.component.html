@@ -1,8 +1,8 @@
-<app-header [menuToggleable]="sidebar.toggleable" (toggleAside)="toggleSidebar()"></app-header>
+<app-header [menuToggleable]="sidebar.toggleable" (toggleSidebar)="toggleSidebar()"></app-header>
 
 <mat-drawer-container>
   <mat-drawer mode="side" [opened]="sidebar.active">
-    <app-aside></app-aside>
+    <app-sidebar></app-sidebar>
   </mat-drawer>
 
   <mat-drawer-content>
