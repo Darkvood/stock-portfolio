@@ -5,6 +5,7 @@ import { IndexComponent } from "./pages/index/index.component";
 import { PortfolioComponent } from "./pages/portfolio/portfolio.component";
 import { CollectionsComponent } from "./pages/collections/collections.component";
 import { NotFoundComponent } from "./pages/not-found/not-found.component";
+import { MaterialModule } from "./material/material.module";
 
 const routes: Routes = [
   { path: "", component: IndexComponent },
@@ -14,8 +15,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  imports: [RouterModule.forRoot(routes), MaterialModule],
   declarations: [IndexComponent, CollectionsComponent, NotFoundComponent, PortfolioComponent],
-  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
