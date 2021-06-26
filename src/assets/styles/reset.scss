@@ -1,0 +1,103 @@
+/**
+ * Remove the grey highlight on links in iOS.
+ * Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 24px;
+  color: #051836;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Add border box sizing in all browsers.
+ */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/*
+ * Change the alignment on media elements in all browsers.
+ */
+img {
+  vertical-align: middle;
+}
+
+/**
+ * 1. Collapse border spacing in all browsers.
+ * 2. Correct table border color inheritance in all Chrome, Edge, and Safari.
+ * 3. Remove text indentation from table contents in Chrome, Edge, and Safari.
+ */
+table {
+  border-collapse: collapse;
+  border-color: inherit;
+  text-indent: 0;
+}
+
+/**
+ * Remove the margin on controls in Safari.
+ */
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge 18-, Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}

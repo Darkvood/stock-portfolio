@@ -17,6 +17,7 @@
     "eslint-plugin-only-warn": "^1.0.2",
     "eslint-plugin-vue": "^7.12.1",
     "prettier": "^2.3.2",
+    "sass": "^1.35.1",
     "vite": "^2.3.8"
   }
 }
