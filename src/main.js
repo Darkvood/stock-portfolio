@@ -1,4 +1,4 @@
-import { createApp, h } from "vue";
+import { createApp } from "vue";
 
 import { store } from "~/store";
 import { router } from "~/router";
