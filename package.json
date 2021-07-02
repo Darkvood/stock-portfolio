@@ -13,8 +13,10 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/test-utils": "^2.0.0-rc.9",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-only-warn": "^1.0.2",
@@ -22,6 +24,7 @@
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "sass": "^1.35.1",
-    "vite": "^2.3.8"
+    "vite": "^2.3.8",
+    "vue-jest": "^5.0.0-alpha.10"
   }
 }

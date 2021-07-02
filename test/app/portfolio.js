@@ -1,3 +1,7 @@
+import { Portfolio } from "~/app/portfolio";
+
 describe("Portfolio", () => {
-  it.todo("should be defined");
+  it("should be defined", () => {
+    expect(new Portfolio()).toBeTruthy();
+  });
 });
